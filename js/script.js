@@ -221,6 +221,14 @@
     if (!form) return;
     var status = document.getElementById('form-status');
 
+    /* --------------------------------------------------------
+       EmailJS configuration
+       The public key is set in index.html via emailjs.init().
+       Update these IDs if you change your EmailJS service/template.
+       -------------------------------------------------------- */
+    var EMAILJS_SERVICE_ID = 'service_b56mcif';
+    var EMAILJS_TEMPLATE_ID = 'template_rbhf4sr';
+
     // Required fields and their friendly labels
     var required = {
       name: 'your name',
@@ -295,46 +303,43 @@
       }
 
       /* --------------------------------------------------------
-         FORM SUBMISSION
+         FORM SUBMISSION — sent via EmailJS
          --------------------------------------------------------
-         Right now this shows a friendly confirmation without
-         sending data anywhere (perfect for GitHub Pages preview).
-
-         To send real bookings, connect a service:
-
-         ---- OPTION A: Formspree / Basin / Netlify (recommended) ----
-         Set the <form action="..."> and method="POST" in index.html,
-         then REPLACE the "success block" below with this fetch call:
-
-           var data = new FormData(form);
-           fetch(form.action, {
-             method: 'POST',
-             body: data,
-             headers: { 'Accept': 'application/json' }
-           })
-           .then(function (res) {
-             if (res.ok) { showSuccess(); form.reset(); }
-             else { showFailure(); }
-           })
-           .catch(showFailure);
-
-         ---- OPTION B: EmailJS ----
-         1. Add the EmailJS SDK <script> to index.html <head>.
-         2. Call emailjs.init('YOUR_PUBLIC_KEY').
-         3. Replace the success block with:
-
-           emailjs.sendForm('SERVICE_ID', 'TEMPLATE_ID', form)
-             .then(function () { showSuccess(); form.reset(); })
-             .catch(showFailure);
-
-         ---- OPTION C: Google Forms ----
-         Point the form action to your Google Form's formResponse URL
-         and rename each input's "name" to the matching entry.XXXX id.
+         Uses emailjs.sendForm(), which forwards every named form
+         field to your EmailJS template as {{variables}}
+         (name, phone, email, vehicle_make, service_address, etc.).
+         The public key is initialized in index.html; the service
+         and template IDs are the constants defined above.
          -------------------------------------------------------- */
 
-      // Default (no backend) success block:
-      showSuccess();
-      form.reset();
+      // Honeypot check — if the hidden bot field is filled, treat as spam.
+      var honeypot = form.querySelector('[name="bot-field"]');
+      if (honeypot && honeypot.value) { showSuccess(); form.reset(); return; }
+
+      var btn = form.querySelector('button[type="submit"]');
+      var originalLabel = btn ? btn.textContent : '';
+
+      // Graceful fallback if the EmailJS SDK failed to load (e.g. offline).
+      if (!window.emailjs) {
+        showSuccess();
+        form.reset();
+        return;
+      }
+
+      if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+      if (status) { status.textContent = 'Sending your request…'; status.className = 'form__status'; }
+
+      emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
+        .then(function () {
+          if (btn) { btn.disabled = false; btn.textContent = originalLabel; }
+          showSuccess();
+          form.reset();
+        })
+        .catch(function (err) {
+          if (window.console && console.error) console.error('EmailJS error:', err);
+          if (btn) { btn.disabled = false; btn.textContent = originalLabel; }
+          showFailure();
+        });
     });
 
     function showSuccess() {

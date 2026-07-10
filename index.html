@@ -399,8 +399,11 @@
              5) EMAILJS — keep as-is; js/script.js contains a commented
                 EmailJS example you can enable.
 
-             Until a service is connected, submissions are handled by
-             js/script.js (validation + friendly confirmation message).
+             ACTIVE: This form is wired up to EmailJS (see the SDK/init
+             near the bottom of this file and setupBookingForm() in
+             js/script.js). Submissions are validated client-side and
+             emailed via EmailJS. The other services above are left as
+             reference in case you want to switch later.
              ============================================================ -->
         <form class="booking__form reveal" id="booking-form" novalidate
               action="#" method="POST">
@@ -681,6 +684,21 @@
       <path d="M12 19V5M5 12l7-7 7 7"/>
     </svg>
   </button>
+
+  <!-- ============================================================
+       EMAILJS — powers the booking form submissions
+       Loads the EmailJS browser SDK and initializes it with your
+       public key. Service & template IDs live in js/script.js.
+       ============================================================ -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    // Initialize EmailJS with your account's public key.
+    (function () {
+      if (window.emailjs) {
+        emailjs.init({ publicKey: 'nH0OCvXOIQMqxt-sQ' });
+      }
+    })();
+  </script>
 
   <!-- ============================================================
        JAVASCRIPT
