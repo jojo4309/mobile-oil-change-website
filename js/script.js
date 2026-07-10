@@ -227,7 +227,7 @@
        Update these IDs if you change your EmailJS service/template.
        -------------------------------------------------------- */
     var EMAILJS_SERVICE_ID = 'service_b56mcif';
-    var EMAILJS_TEMPLATE_ID = 'template_rbhf4sr';
+    var EMAILJS_TEMPLATE_ID = 'template_yrtz4jd';
 
     // Required fields and their friendly labels
     var required = {
