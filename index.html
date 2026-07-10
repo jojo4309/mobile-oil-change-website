@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+       PRIMARY META TAGS / SEO
+       Customize the title, description and URLs for your business.
+       ============================================================ -->
+  <title>Mobile Oil Change | Professional Oil Changes Delivered To Your Door</title>
+  <meta name="description" content="Professional mobile oil change service. We come to your home, workplace, or fleet location. Fast, convenient, and honest pricing starting at $55 + oil & filter." />
+  <meta name="keywords" content="mobile oil change, oil change near me, mobile mechanic, fleet oil change, synthetic oil change, oil change at home" />
+  <meta name="author" content="Mobile Oil Change Co." />
+  <meta name="theme-color" content="#1e66d0" />
+  <link rel="canonical" href="https://your-domain.com/" />
+
+  <!-- Add a "js" class as early as possible so scroll-reveal elements are only
+       hidden when JavaScript is available. Without JS, all content stays visible. -->
+  <script>document.documentElement.className += ' js';</script>
+
+  <!-- ============================================================
+       OPEN GRAPH / SOCIAL SHARING
+       Update the og:url and og:image to your own domain/assets.
+       ============================================================ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mobile Oil Change | Delivered To Your Door" />
+  <meta property="og:description" content="Skip the shop. We come to your home or workplace and perform professional oil changes wherever your vehicle is parked." />
+  <meta property="og:image" content="assets/og-image.svg" />
+  <meta property="og:url" content="https://your-domain.com/" />
+  <meta property="og:site_name" content="Mobile Oil Change Co." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mobile Oil Change | Delivered To Your Door" />
+  <meta name="twitter:description" content="Professional mobile oil changes that come to you. Book online today." />
+  <meta name="twitter:image" content="assets/og-image.svg" />
+
+  <!-- ============================================================
+       FAVICON
+       ============================================================ -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+
+  <!-- ============================================================
+       GOOGLE FONTS (Poppins for headings, Inter for body)
+       Preconnect for faster loading.
+       ============================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- ============================================================
+       STYLESHEET
+       ============================================================ -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- ============================================================
+       SCHEMA.ORG LOCAL BUSINESS MARKUP (SEO)
+       Update the business details, address, phone, hours & geo.
+       ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Mobile Oil Change Co.",
+    "image": "assets/og-image.svg",
+    "description": "Professional mobile oil change service that comes to your home, workplace, or fleet location.",
+    "url": "https://your-domain.com/",
+    "telephone": "+1-555-123-4567",
+    "email": "hello@mobileoilchange.com",
+    "priceRange": "$$",
+    "areaServed": "Greater Metro Area",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Serving your area",
+      "addressLocality": "Your City",
+      "addressRegion": "ST",
+      "postalCode": "00000",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "07:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "17:00"
+      }
+    ],
+    "makesOffer": {
+      "@type": "Offer",
+      "name": "Mobile Oil Change",
+      "priceCurrency": "USD",
+      "price": "55",
+      "description": "Labor starts at $55 plus oil and filter."
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <!-- ============================================================
+       PAGE LOADER — hidden by JS once the page is ready
+       ============================================================ -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader__spinner"></div>
+  </div>
+
+  <!-- ============================================================
+       SKIP LINK (accessibility)
+       ============================================================ -->
+  <a href="#hero" class="skip-link">Skip to main content</a>
+
+  <!-- ============================================================
+       STICKY NAVIGATION
+       ============================================================ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#hero" class="nav__logo" aria-label="Mobile Oil Change home">
+        <svg class="nav__logo-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M5 13l1-5h12l1 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M3 13h18v4a1 1 0 01-1 1h-1a2 2 0 11-4 0H9a2 2 0 11-4 0H4a1 1 0 01-1-1v-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+        <span>Mobile<strong>Oil</strong></span>
+      </a>
+
+      <!-- Desktop + mobile links -->
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#hero" class="nav__link">Home</a></li>
+        <li><a href="#services" class="nav__link">Services</a></li>
+        <li><a href="#pricing" class="nav__link">Pricing</a></li>
+        <li><a href="#why-us" class="nav__link">Why Choose Us</a></li>
+        <li><a href="#booking" class="nav__link">Booking</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+        <li class="nav__cta-item"><a href="#booking" class="btn btn--primary btn--sm">Book Now</a></li>
+      </ul>
+
+      <!-- Hamburger toggle (mobile) -->
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============================================================
+         HERO SECTION
+         ============================================================ -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <span class="hero__badge">⭐ Trusted Local Mobile Mechanics</span>
+          <h1 class="hero__title">Professional Mobile Oil Changes Delivered To Your Door</h1>
+          <p class="hero__subtitle">
+            Skip the shop. Save time. We come to your home or workplace and perform
+            professional oil changes wherever your vehicle is parked.
+          </p>
+          <div class="hero__actions">
+            <a href="#booking" class="btn btn--primary btn--lg">Book Now</a>
+            <a href="#pricing" class="btn btn--ghost btn--lg">Get a Quote</a>
+          </div>
+          <ul class="hero__trust">
+            <li>✔ Fully Equipped</li>
+            <li>✔ Quality Parts</li>
+            <li>✔ Honest Pricing</li>
+          </ul>
+        </div>
+
+        <!-- Hero image: replace the SVG below with a real photo in /images
+             e.g. <img src="images/hero-mechanic.jpg" alt="Mechanic performing a mobile oil change" /> -->
+        <div class="hero__media reveal">
+          <div class="hero__image" role="img" aria-label="Mechanic performing an oil change at a customer's driveway">
+            <svg viewBox="0 0 480 360" class="hero__illustration" aria-hidden="true">
+              <defs>
+                <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#dbeafe"/>
+                  <stop offset="1" stop-color="#eff6ff"/>
+                </linearGradient>
+                <linearGradient id="car" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#1e66d0"/>
+                  <stop offset="1" stop-color="#1749a0"/>
+                </linearGradient>
+              </defs>
+              <rect width="480" height="360" fill="url(#sky)"/>
+              <rect y="255" width="480" height="105" fill="#cbd5e1"/>
+              <!-- house -->
+              <rect x="20" y="150" width="120" height="105" fill="#e2e8f0"/>
+              <polygon points="20,150 80,110 140,150" fill="#94a3b8"/>
+              <rect x="55" y="190" width="30" height="65" fill="#64748b"/>
+              <!-- car -->
+              <rect x="180" y="185" width="230" height="60" rx="18" fill="url(#car)"/>
+              <path d="M215 185 q25 -42 70 -42 h40 q35 0 55 42 z" fill="#3b82f6"/>
+              <rect x="235" y="158" width="55" height="27" rx="6" fill="#bfdbfe"/>
+              <rect x="300" y="158" width="45" height="27" rx="6" fill="#bfdbfe"/>
+              <circle cx="230" cy="248" r="26" fill="#1e293b"/>
+              <circle cx="230" cy="248" r="11" fill="#94a3b8"/>
+              <circle cx="365" cy="248" r="26" fill="#1e293b"/>
+              <circle cx="365" cy="248" r="11" fill="#94a3b8"/>
+              <!-- oil drop badge -->
+              <circle cx="405" cy="120" r="40" fill="#ffffff" opacity="0.95"/>
+              <path d="M405 96 c14 20 20 30 20 42 a20 20 0 01-40 0 c0-12 6-22 20-42z" fill="#1e66d0"/>
+            </svg>
+          </div>
+          <div class="hero__floating-card">
+            <span class="hero__floating-price">$55<small>+ oil &amp; filter</small></span>
+            <span class="hero__floating-label">Starting price</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Three feature cards -->
+      <div class="container hero__features">
+        <article class="feature-card reveal">
+          <div class="feature-card__icon" aria-hidden="true">🚗</div>
+          <h3>Mobile Service</h3>
+          <p>We come to your home, workplace, or parking lot — no shop visit required.</p>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-card__icon" aria-hidden="true">🛠️</div>
+          <h3>Professional Quality</h3>
+          <p>Certified technicians, professional equipment, and quality parts every time.</p>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-card__icon" aria-hidden="true">⚡</div>
+          <h3>Fast &amp; Convenient</h3>
+          <p>Most oil changes are completed in about 30 minutes while you carry on with your day.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PRICING SECTION
+         ============================================================ -->
+    <section class="pricing section" id="pricing">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">Simple, Honest Pricing</span>
+          <h2 class="section__title">Oil Changes Starting At</h2>
+        </div>
+
+        <div class="pricing__card reveal">
+          <div class="pricing__price">
+            <span class="pricing__amount">$55</span>
+            <span class="pricing__plus">+ Oil &amp; Filter</span>
+          </div>
+          <ul class="pricing__list">
+            <li><span class="pricing__check" aria-hidden="true">✔</span> Labor starts at <strong>$55</strong></li>
+            <li><span class="pricing__check" aria-hidden="true">✔</span> Oil and filter costs vary depending on vehicle requirements</li>
+            <li><span class="pricing__check" aria-hidden="true">✔</span> Final price depends on oil type and oil capacity</li>
+          </ul>
+          <p class="pricing__note">No hidden fees. You'll always get a clear quote before we begin.</p>
+          <a href="#booking" class="btn btn--primary btn--lg btn--block">Book Your Oil Change</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVICES SECTION
+         ============================================================ -->
+    <section class="services section section--alt" id="services">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">What We Offer</span>
+          <h2 class="section__title">Our Services</h2>
+          <p class="section__subtitle">Everything your vehicle needs — delivered wherever it's parked.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">🛢️</div>
+            <h3>Standard Oil Change</h3>
+            <p>Choose the oil that fits your vehicle and driving style:</p>
+            <ul class="service-card__list">
+              <li>Conventional Oil</li>
+              <li>Synthetic Blend</li>
+              <li>Full Synthetic</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">🔧</div>
+            <h3>Filter Replacement</h3>
+            <p>Quality oil filter replacement selected precisely for your vehicle's specifications.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">🔍</div>
+            <h3>Multi-Point Inspection</h3>
+            <p>A complimentary check to keep you safe on the road:</p>
+            <ul class="service-card__list">
+              <li>Fluid levels</li>
+              <li>Tire condition</li>
+              <li>Belts</li>
+              <li>Hoses</li>
+              <li>Battery</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">🚚</div>
+            <h3>Fleet Services</h3>
+            <p>Mobile oil changes for small business fleets and multiple vehicles — minimize downtime and keep your team moving.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WHY CHOOSE US
+         ============================================================ -->
+    <section class="why section" id="why-us">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">The Better Way</span>
+          <h2 class="section__title">Why Choose Us</h2>
+          <p class="section__subtitle">Convenience without compromising on quality.</p>
+        </div>
+
+        <div class="why__grid">
+          <div class="why__item reveal"><span class="why__icon" aria-hidden="true">📍</span><h3>We Come To You</h3><p>Home, work, or anywhere your car is parked.</p></div>
+          <div class="why__item reveal"><span class="why__icon" aria-hidden="true">🚫</span><h3>No Waiting Rooms</h3><p>Skip the lobby and get your time back.</p></div>
+          <div class="why__item reveal"><span class="why__icon" aria-hidden="true">💰</span><h3>Honest Pricing</h3><p>Clear quotes with no surprise fees.</p></div>
+          <div class="why__item reveal"><span class="why__icon" aria-hidden="true">🧰</span><h3>Professional Equipment</h3><p>Shop-grade tools brought to your driveway.</p></div>
+          <div class="why__item reveal"><span class="why__icon" aria-hidden="true">✅</span><h3>Quality Parts</h3><p>Trusted oils and filters for your vehicle.</p></div>
+          <div class="why__item reveal"><span class="why__icon" aria-hidden="true">⏱️</span><h3>Save Time</h3><p>Most services done in about 30 minutes.</p></div>
+          <div class="why__item reveal"><span class="why__icon" aria-hidden="true">📅</span><h3>Reliable Scheduling</h3><p>On-time arrivals you can count on.</p></div>
+          <div class="why__item reveal"><span class="why__icon" aria-hidden="true">😊</span><h3>Convenient Service</h3><p>Effortless booking from start to finish.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         HOW IT WORKS
+         ============================================================ -->
+    <section class="how section section--alt" id="how-it-works">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">Simple Process</span>
+          <h2 class="section__title">How It Works</h2>
+          <p class="section__subtitle">Four easy steps to a fresh oil change.</p>
+        </div>
+
+        <ol class="how__steps">
+          <li class="how__step reveal">
+            <span class="how__number">1</span>
+            <h3>Schedule Appointment</h3>
+            <p>Customer selects a convenient date and location.</p>
+          </li>
+          <li class="how__step reveal">
+            <span class="how__number">2</span>
+            <h3>We Come To You</h3>
+            <p>A technician arrives at the requested location.</p>
+          </li>
+          <li class="how__step reveal">
+            <span class="how__number">3</span>
+            <h3>Professional Oil Change</h3>
+            <p>Oil and filter are replaced with quality products.</p>
+          </li>
+          <li class="how__step reveal">
+            <span class="how__number">4</span>
+            <h3>Drive Away Happy</h3>
+            <p>Your vehicle is ready to go.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         BOOKING SECTION
+         ============================================================ -->
+    <section class="booking section" id="booking">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">Book In Minutes</span>
+          <h2 class="section__title">Schedule Your Oil Change</h2>
+          <p class="section__subtitle">Fill out the form and we'll confirm your appointment shortly.</p>
+        </div>
+
+        <!-- ============================================================
+             BOOKING FORM
+             --------------------------------------------------------
+             GitHub Pages cannot process form submissions server-side.
+             To make this form live, connect a form-handling service:
+
+             1) FORMSPREE  — set action to your endpoint & method="POST":
+                <form action="https://formspree.io/f/YOUR_ID" method="POST">
+             2) NETLIFY FORMS — add: data-netlify="true" name="booking"
+                (and a hidden input: <input type="hidden" name="form-name" value="booking">)
+             3) BASIN — action="https://usebasin.com/f/YOUR_ID" method="POST"
+             4) GOOGLE FORMS — point action to your form's formResponse URL
+                and match each input's name to entry.XXXX field ids.
+             5) EMAILJS — keep as-is; js/script.js contains a commented
+                EmailJS example you can enable.
+
+             Until a service is connected, submissions are handled by
+             js/script.js (validation + friendly confirmation message).
+             ============================================================ -->
+        <form class="booking__form reveal" id="booking-form" novalidate
+              action="#" method="POST">
+          <!-- Netlify honeypot (safe to leave in place) -->
+          <p class="hidden" aria-hidden="true">
+            <label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+          </p>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label for="name">Customer Name *</label>
+              <input type="text" id="name" name="name" autocomplete="name" required />
+              <span class="form__error" data-error-for="name"></span>
+            </div>
+            <div class="form__group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" required />
+              <span class="form__error" data-error-for="phone"></span>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+              <span class="form__error" data-error-for="email"></span>
+            </div>
+            <div class="form__group">
+              <label for="engine">Engine Size</label>
+              <input type="text" id="engine" name="engine" placeholder="e.g. 2.5L / V6" />
+            </div>
+          </div>
+
+          <div class="form__row form__row--three">
+            <div class="form__group">
+              <label for="vehicle-year">Vehicle Year</label>
+              <input type="number" id="vehicle-year" name="vehicle_year" min="1950" max="2030" placeholder="2020" />
+            </div>
+            <div class="form__group">
+              <label for="vehicle-make">Vehicle Make</label>
+              <input type="text" id="vehicle-make" name="vehicle_make" placeholder="Toyota" />
+            </div>
+            <div class="form__group">
+              <label for="vehicle-model">Vehicle Model</label>
+              <input type="text" id="vehicle-model" name="vehicle_model" placeholder="Camry" />
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label for="date">Preferred Date *</label>
+              <input type="date" id="date" name="preferred_date" required />
+              <span class="form__error" data-error-for="date"></span>
+            </div>
+            <div class="form__group">
+              <label for="time">Preferred Time *</label>
+              <input type="time" id="time" name="preferred_time" required />
+              <span class="form__error" data-error-for="time"></span>
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label for="address">Service Address *</label>
+            <input type="text" id="address" name="service_address" autocomplete="street-address" placeholder="Where should we meet your vehicle?" required />
+            <span class="form__error" data-error-for="address"></span>
+          </div>
+
+          <div class="form__group">
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Oil preference, gate codes, parking details, etc."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg btn--block">Book Appointment</button>
+
+          <!-- Success / status message injected by JS -->
+          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT SECTION
+         ============================================================ -->
+    <section class="contact section section--alt" id="contact">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">Get In Touch</span>
+          <h2 class="section__title">Contact Us</h2>
+          <p class="section__subtitle">Questions? We're happy to help.</p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <div class="contact__item">
+              <span class="contact__icon" aria-hidden="true">📞</span>
+              <div><h3>Phone</h3><p><a href="tel:+15551234567">(555) 123-4567</a></p></div>
+            </div>
+            <div class="contact__item">
+              <span class="contact__icon" aria-hidden="true">✉️</span>
+              <div><h3>Email</h3><p><a href="mailto:hello@mobileoilchange.com">hello@mobileoilchange.com</a></p></div>
+            </div>
+            <div class="contact__item">
+              <span class="contact__icon" aria-hidden="true">📍</span>
+              <div><h3>Service Area</h3><p>Greater Metro Area &amp; surrounding suburbs</p></div>
+            </div>
+            <div class="contact__item">
+              <span class="contact__icon" aria-hidden="true">🕒</span>
+              <div><h3>Business Hours</h3><p>Mon–Fri: 7am – 7pm<br />Sat: 8am – 5pm<br />Sun: Closed</p></div>
+            </div>
+          </div>
+
+          <div class="contact__actions reveal">
+            <a href="tel:+15551234567" class="btn btn--primary btn--lg btn--block">📞 Call Now</a>
+            <a href="mailto:hello@mobileoilchange.com" class="btn btn--outline btn--lg btn--block">✉️ Email Us</a>
+            <a href="#booking" class="btn btn--dark btn--lg btn--block">📅 Schedule Service</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FAQ SECTION (accordion)
+         ============================================================ -->
+    <section class="faq section" id="faq">
+      <div class="container container--narrow">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">Good To Know</span>
+          <h2 class="section__title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="accordion reveal">
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>How much does an oil change cost?</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel">
+              <p>Labor starts at <strong>$55</strong>. On top of that, you pay for the oil and filter your vehicle needs. Because oil type (conventional, synthetic blend, or full synthetic) and oil capacity vary from car to car, the final total depends on your specific vehicle. We always provide a clear quote before we begin — no surprises.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>What oil do you use?</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel">
+              <p>We use quality oils matched to your vehicle's specifications. The exact oil type and weight depend on your manufacturer's recommendations and how you drive. We'll help you choose between conventional, synthetic blend, and full synthetic options.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>How long does an oil change take?</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel">
+              <p>Most standard oil changes are completed in about <strong>30 minutes</strong>, including the multi-point inspection. Fleet and larger vehicles may take a little longer.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>Do I need to be home?</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel">
+              <p>Not necessarily. You can schedule service at any convenient location where your vehicle is parked — your home, workplace, or a parking lot. As long as we have access to your vehicle and keys (or arrangements are made), we can complete the service.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>Do you service trucks and SUVs?</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel">
+              <p>Yes. We service cars, trucks, SUVs, and vans. Larger vehicles often require more oil, which can affect the final price — we'll confirm your quote when you book.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>How do I pay?</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel">
+              <p>We accept convenient payment options including major credit/debit cards and popular mobile payment methods. Payment is collected on-site once your service is complete.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CTA BANNER
+         ============================================================ -->
+    <section class="cta-banner">
+      <div class="container cta-banner__inner reveal">
+        <h2>Ready To Save Time?</h2>
+        <p>Book your mobile oil change today and let us come to you.</p>
+        <a href="#booking" class="btn btn--white btn--lg">Schedule Now</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col footer__brand">
+        <a href="#hero" class="nav__logo nav__logo--light">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 13l1-5h12l1 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3 13h18v4a1 1 0 01-1 1h-1a2 2 0 11-4 0H9a2 2 0 11-4 0H4a1 1 0 01-1-1v-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+          <span>Mobile<strong>Oil</strong></span>
+        </a>
+        <p>Professional mobile oil changes delivered to your door. Fast, convenient, and honestly priced.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#why-us">Why Choose Us</a></li>
+          <li><a href="#booking">Booking</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+15551234567">(555) 123-4567</a></li>
+          <li><a href="mailto:hello@mobileoilchange.com">hello@mobileoilchange.com</a></li>
+        </ul>
+        <h4 class="footer__hours-title">Hours</h4>
+        <ul>
+          <li>Mon–Fri: 7am – 7pm</li>
+          <li>Sat: 8am – 5pm</li>
+          <li>Sun: Closed</li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Follow Us</h4>
+        <div class="footer__social">
+          <!-- Update href values with your real social profiles -->
+          <a href="#" aria-label="Facebook" class="footer__social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 10h3l.5-3H13V5.5c0-.9.3-1.5 1.6-1.5H16V1.2A21 21 0 0013.6 1C11.2 1 9.5 2.4 9.5 5.1V7H7v3h2.5v9H13z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="footer__social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="X" class="footer__social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h3l-7 8 8 12h-6l-5-7-5 7H3l7-9L2 2h6l4 6zm-1 18h1.6L7 4H5.3z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Mobile Oil Change Co. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       SCROLL-TO-TOP BUTTON
+       ============================================================ -->
+  <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <!-- ============================================================
+       JAVASCRIPT
+       ============================================================ -->
+  <script src="js/script.js" defer></script>
+</body>
+</html>
